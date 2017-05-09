@@ -1,0 +1,9 @@
+﻿body {
+}
+
+.side-nav li {
+    padding: 0px 15px;
+}
+.dropdown-content li>a {
+    color:#555555;
+}
