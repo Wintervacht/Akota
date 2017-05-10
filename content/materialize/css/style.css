@@ -1,9 +1,80 @@
-﻿body {
+﻿html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url(/akota/content/images/bg28.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 100px;
+}
+
+ul.dropdown-content >li {
+    width: 200px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight:100;
+}
+#home-content {
+    margin-top: -50px;
+    padding-top: 50px;
+}
+
+.padded {
+    padding: 5%;
+}
+
+.padded-sides {
+    padding: 0 5%;
 }
 
 .side-nav li {
     padding: 0px 15px;
 }
+
 .dropdown-content li>a {
     color:#555555;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.bolder {
+    font-weight:600;
+    font-size:1.2em;
+}
+
+.collapsible-header {
+    font-weight:600;
+}
+
+nav .brand-logo.right {
+    position: relative;
+}
+
+.logo-img {
+    margin: 7px 0px;
+}
+
+footer.page-footer {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+    padding-top: 10px;
+}
+
 }

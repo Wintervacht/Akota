@@ -1,18 +1,18 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Akota Training En Advies</title>
+    <title>AKOTA Training en Advies</title>
     <meta charset="utf-8" />
     <meta name="author" content="Studio 7A">
-    <meta name="description" content="Akota Training En Advies">
+    <meta name="description" content="AKOTA Training en Advies">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="/content/materialize/css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="/content/materialize/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="content/materialize/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="content/materialize/css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="text/javascript" src="/Scripts/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="/Scripts/materialize/materialize.min.js"></script>
-    <script type="text/javascript" src="/Scripts/site.js"></script>
-    <link rel="shortcut icon" href="/content/images/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/materialize/materialize.min.js"></script>
+    <script type="text/javascript" src="Scripts/site.js"></script>
+    <link rel="shortcut icon" href="content/images/favicon.ico" type="image/x-icon">
 </head>
 <body class="grey lighten-4">
     <!--NAVIGATIE-->
@@ -20,11 +20,13 @@
         <nav class="orange darken-3">
             <div class="container">
                 <ul id="dropdown-menu" class="dropdown-content grey-text text-lighten-1">
-                    <li><a href="#" class="waves-effect waves-light">Home</a></li>
+                    <li class="hide"><a href="#" class="waves-effect waves-light" id="loadHome">Home</a></li>
                     <li class="divider"></li>
-                    <li><a href="/aanbod.html" class="waves-effect waves-light">Curcusaanbod</a></li>
+                    <li><a href="#" class="waves-effect waves-light" id="loadCursus">Curcusaanbod</a></li>
                     <li class="divider"></li>
-                    <li><a href="/contact.html" class="waves-effect waves-light">Contact</a></li>
+                    <li><a href="#" class="waves-effect waves-light" id="loadForm">Cursus Boeken</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="waves-effect waves-light" id="loadContact">Contact</a></li>
                     <li class="divider"></li>
                 </ul>
                 <ul class="left hide-on-med-and-down">
@@ -32,21 +34,35 @@
                 </ul>
                 <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="slide-out" class="side-nav">
-                    <li class="grey darken-1 waves-effect waves-light white-text" style="width:100%;">Menu</li>
+                    <li class="orange darken-1 waves-effect waves-light white-text" id="menu-title" style="width:100%;">Menu</li>
                     <li class="divider"></li>
-                    <li><a href="#" class="waves-effect waves-light">Home</a></li>
+                    <li class="hide"><a href="#" class="waves-effect waves-light" id="loadHomem">Home</a></li>
                     <li class="divider"></li>
-                    <li><a href="/aanbod.html" class="waves-effect waves-light">Curcusaanbod</a></li>
+                    <li><a href="#" class="waves-effect waves-light" id="loadCursusm">Curcusaanbod</a></li>
                     <li class="divider"></li>
-                    <li><a href="/contact.html" class="waves-effect waves-light">Contact</a></li>
+                    <li><a href="#" class="waves-effect waves-light" id="loadFormm">Cursus Boeken</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="waves-effect waves-light" id="loadContactm">Contact</a></li>
                     <li class="divider"></li>
                 </ul>
 
-                <!--<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>-->
-                <a class="tooltipped brand-logo center" data-position="Bottom" data-delay="50" data-tooltip="Tip: ga met je muis over verschillende icoontjes en UI-items, of tik er op voor meer info!"><span style="font-weight:200;font-variant:small-caps; letter-spacing:8px;">Akota</span></a>
+                <a class="brand-logo right"><img src="content/images/akotalogo5.png" width="150" class="logo-img" /></a>
             </div>
         </nav>
     </div>
 
+    <main class="container" id="content">
+
+
+    </main>
+    
+    <footer class="page-footer orange darken-3">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 AKOTA Training En Advies
+                <!--<a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

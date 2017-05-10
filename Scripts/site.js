@@ -1,17 +1,28 @@
 ﻿$(document).ready(function () {
     var $root = $('html, body');
-    $('ul.side-nav > li > a, ul.dropdown-content > li > a').click(function () {
-        $root.animate({
-            scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-        }, 700);
-        $('.button-collapse').sideNav('hide');
-        return false;
+
+    $("#content").load("home.html");
+
+    $('.collapsible').collapsible();
+
+    $("ul.dropdown-content > li > a, ul.side-nav > li > a").on("click", function () {
+        $(this).parent().siblings('li').removeClass('hide');
+        $(this).parent().addClass('hide');
     });
 
-    if ($(window).width() < 600) {
-        $('#vertical').removeClass('valign-wrapper');
-    };
-
+    $("#loadHome, #loadHomem").on("click", function () {
+        $("#content").load("home.html");
+    });
+    $("#loadCursus, #loadCursusm").on("click", function () {
+        $("#content").load("aanbod.html");
+    });
+    $("#loadForm, #loadFormm").on("click", function () {
+        $("#content").load("boeken.html");
+    });
+    $("#loadContact, #loadContactm").on("click", function () {
+        $("#content").load("contact.html");
+    });
+    
     $(".dropdown-button").dropdown({
         constrain_width: false,
         hover: false,
@@ -19,6 +30,8 @@
     });
 
     $('.button-collapse').sideNav({
-        closeOnClick: true
+        closeOnClick: true,
+        draggable: true
     });
+
 });
