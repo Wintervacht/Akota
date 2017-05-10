@@ -56,6 +56,11 @@ main {
     font-size:1.2em;
 }
 
+blockquote, .large-text{
+    font-weight:200;
+    font-size:1.3em;
+}
+
 .collapsible-header {
     font-weight:600;
 }
