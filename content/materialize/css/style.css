@@ -6,7 +6,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-image: url(/akota/content/images/bg28.jpg);
+    background-image: url(/content/images/bg28.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -37,6 +37,14 @@ h1, h2, h3, h4, h5 {
 
 .padded-sides {
     padding: 0 5%;
+}
+
+.grad {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(linen, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(linen, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(linen, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(linen, white); /* Standard syntax */
 }
 
 .side-nav li {
