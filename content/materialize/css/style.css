@@ -89,5 +89,9 @@ footer.page-footer {
     main {
     padding-top: 10px;
 }
+    .valign-wrapper {
+display: inherit;
+}
 
 }
+
