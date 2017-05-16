@@ -1,4 +1,10 @@
-﻿<div class="row card-panel white section">
+﻿<script language="JavaScript">
+                    var name = "anton";
+                    var domain = "akota.nl";
+                    var linktext = name + "@" + domain;
+                    $("#email").html("<a href='" + "mail" + "to:" + name + "@" + domain + "'>" + linktext + "</a>");
+</script>
+<div class="row card-panel white section">
     <div class="padded-sides row large-text">
         <div class="col m6 s12">
             <p>
@@ -6,7 +12,8 @@
                 Correspondentieadres:<br />
                 Pieter Jacopstraat 12<br />
                 4921DB Made<br />
-                Telefoon: 06-53966962
+                Telefoon: 06-53966962<br />
+                <span id="email"></span>
             </p>
         </div>
         <div class="col m6 s12">
