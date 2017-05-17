@@ -5,7 +5,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-image: url(/content/images/bg28.jpg);
+    background-image: url(/akota/content/images/bg28.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
