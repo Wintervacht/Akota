@@ -5,6 +5,8 @@
 
     $('.collapsible').collapsible();
 
+
+
     $("ul.dropdown-content > li > a, ul.side-nav > li > a").on("click", function () {
         $(this).parent().siblings('li').removeClass('hide');
         $(this).parent().addClass('hide');

@@ -1,11 +1,9 @@
 ﻿<script type="text/javascript">
-    $(document).ready(function () {
         $('.collapsible').collapsible();
 
         $("#nuBoeken").on("click", function () {
             $("#content", window.parent.document).load("boeken.html");
         });
-    });
 </script>
 
 <div class="row white section z-depth-5 padded" id="home-content">
@@ -16,7 +14,11 @@
         <ul class="collapsible popout" data-collapsible="accordion">
             <li>
                 <div class="collapsible-header">Openingstechnieken</div>
-                <div class="collapsible-body"><p>Meatball pig pork loin, boudin bresaola ham pork. T-bone tenderloin porchetta tri-tip, beef hamburger andouille pork chop short ribs sausage bresaola corned beef ball tip jerky. Tongue chicken short loin, leberkas flank meatloaf turkey landjaeger corned beef pastrami. Venison tongue pork shank kielbasa t-bone.</p></div>
+                <div class="collapsible-body row valign-wrapper">
+                    <div class="col s12 m8 valign-wrapper"><p>Meatball pig pork loin, boudin bresaola ham pork. T-bone tenderloin porchetta tri-tip, beef hamburger andouille pork chop short ribs sausage bresaola corned beef ball tip jerky. Tongue chicken short loin, leberkas flank meatloaf turkey landjaeger corned beef pastrami. Venison tongue pork shank kielbasa t-bone.</p></div><div class="col s12 m4">
+                        <img src="/content/images/IMG_0007.JPG" class="responsive-img padded" />
+                    </div>
+                </div>
             </li>
             <li>
                 <div class="collapsible-header">Mechanische Beveiliging</div>
@@ -40,7 +42,7 @@
             </li>
         </ul>
         <div class="center section">
-            <h5> Snel een cursus boeken?</h5><p> Klik dan door naar het <a href="#" id="nuBoeken">boekingsformulier</a>.</p>
+            <h5> Snel een cursus boeken?</h5><br /><a href="#" id="nuBoeken" class="btn waves-effect waves-light pulse orange darken-4">Naar het boekingsformulier</a>
         </div>
     </div>
 
