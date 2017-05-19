@@ -3,8 +3,8 @@
 
         $("#nuBoeken").on("click", function () {
             $("#content", window.parent.document).load("boeken.html");
-            $("#loadCursus, #loadCursusm").removeClass('hide');
-            $("#loadForm, #loadFormm").addClass('hide');
+            $("#loadCursus, #loadCursusm").parent('li').removeClass('active');
+            $("#loadForm, #loadFormm").parent('li').addClass('active');
         });
 </script>
 
