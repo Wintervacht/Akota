@@ -5,6 +5,7 @@
     $("ul.dropdown-content > li > a, ul.side-nav > li > a").on("click", function () {
         $(this).parent().siblings('li').removeClass('active');
         $(this).parent().addClass('active');
+        //$("#content").load($(this).attr('href'));
     });
     $("#loadHome, #loadHomem").on("click", function () {
         $("#content").load("home.html");
