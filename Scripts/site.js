@@ -5,19 +5,8 @@
     $("ul.dropdown-content > li > a, ul.side-nav > li > a").on("click", function () {
         $(this).parent().siblings('li').removeClass('active');
         $(this).parent().addClass('active');
-        //$("#content").load($(this).attr('href'));
-    });
-    $("#loadHome, #loadHomem").on("click", function () {
-        $("#content").load("home.html");
-    });
-    $("#loadCursus, #loadCursusm").on("click", function () {
-        $("#content").load("aanbod.html");
-    });
-    $("#loadForm, #loadFormm").on("click", function () {
-        $("#content").load("boeken.html");
-    });
-    $("#loadContact, #loadContactm").on("click", function () {
-        $("#content").load("contact.html");
+        $("#content").load($(this).attr('href'));
+        return false;
     });
     $(".dropdown-button").dropdown({
         constrain_width: false,
