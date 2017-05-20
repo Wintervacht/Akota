@@ -6,7 +6,7 @@
         $(this).parent().siblings('li').removeClass('active');
         $(this).parent().addClass('active');
         $("#content").load($(this).attr('href'));
-        return false;
+        //return false;
     });
     $(".dropdown-button").dropdown({
         constrain_width: false,
